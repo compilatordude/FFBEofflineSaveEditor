@@ -29,7 +29,9 @@ Plus:
 
 ## Download
 
-Prebuilt Windows binary: see [Releases](https://github.com/compilatordude/FFBEofflineSaveEditor/releases). Every push to main refreshes the latest build; pushing a tag like 1.0.0 cuts a proper release.
+Prebuilt Windows binary: see [Releases](https://github.com/compilatordude/FFBEofflineSaveEditor/releases).
+
+The [build workflow](.github/workflows/build.yml) runs `cargo test` + `cargo build --release` on every push and attaches `exvius-save-editor.exe` to a rolling *latest* pre-release. Pushing a tag such as `v1.0.0` cuts a versioned release. Binaries are not committed to the repository.
 
 ## Build
 
@@ -69,4 +71,5 @@ The save is plain JSON with no signature or checksum; the editor only writes the
 src/main.rs      entire application (~2k lines, single file)
 Cargo.toml       dependencies
 docs/            screenshots
+.github/         CI workflow
 ```
