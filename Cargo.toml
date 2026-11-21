@@ -1,0 +1,17 @@
+[package]
+name = "exvius-save-editor"
+version = "1.0.0"
+edition = "2021"
+description = "Editor for Exvius Offline campaign.json"
+
+[dependencies]
+eframe = { version = "0.31", default-features = false, features = ["glow", "default_fonts"] }
+serde_json = "1"
+rfd = "0.18"
+sha2 = "0.10"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+codegen-units = 1
