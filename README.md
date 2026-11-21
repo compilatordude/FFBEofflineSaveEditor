@@ -1,5 +1,7 @@
 # FFBE Offline Save Editor
 
+[![build](https://github.com/compilatordude/FFBEofflineSaveEditor/actions/workflows/build.yml/badge.svg)](https://github.com/compilatordude/FFBEofflineSaveEditor/actions/workflows/build.yml)
+
 A small Windows desktop editor for `campaign.json` from **Exvius Offline** (the FFBE offline fan build, package `com.exvius.offline.test`).
 
 Written in Rust with [egui/eframe](https://github.com/emilk/egui) — a single self-contained `.exe`, no runtime, no installer.
@@ -24,6 +26,10 @@ Plus:
 - **Name cache** — item/unit names come from the game's master tables; `Refresh names` pulls them from the phone and caches them in `%APPDATA%\ExviusSaveEditor\names.json`.
 
 ![Roster](docs/roster.png)
+
+## Download
+
+Prebuilt Windows binary: see [Releases](https://github.com/compilatordude/FFBEofflineSaveEditor/releases). Every push to main refreshes the latest build; pushing a tag like 1.0.0 cuts a proper release.
 
 ## Build
 
